@@ -1,0 +1,18 @@
+<h1>Список постов</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+{%for post in posts.items%}
+<pre>
+    id-{{post.id}}
+    автор-{{post.from_id}}
+    дата-{{post.date}}
+    {{post.text}}
+    {{post.is_pinned}}
+    приложения-{{post.attachments}}
+    комментариев-{{post.comments.count}}
+    лайков-{{post.likes.count}}
+    репостов-{{post.reposts.count}}
+    просмотров-{{post.views.count}}
+</pre>
+{% endfor %}
