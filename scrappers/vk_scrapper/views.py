@@ -6,7 +6,7 @@ import datetime
 
 
 # Create your views here.
-def hello(request):
+def collect_data(request):
     # get token from scrappers/settings.py. Just add a string VK_TOKEN='YOUR_TOKEN' in settings.py
     session = vk.Session(access_token=getattr(myapp_settings, 'VK_TOKEN'))
     api = vk.API(session, v='5.103', lang='ru', timeout=10)

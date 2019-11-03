@@ -1,0 +1,10 @@
+<h1>Список постов</h1>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+{% autoescape off %}
+    {%for post in posts%}
+    <pre>
+        {{post}}
+    </pre>
+    {% endfor %}
+{% endautoescape %}
