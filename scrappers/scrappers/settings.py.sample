@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'vk_scrapper'p
+    'vk_scrapper'
 ]
 
 MIDDLEWARE = [
@@ -121,3 +121,5 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 VK_TOKEN = 'YOUR_TOKEN_HERE'
+FACEBOOK_LOGIN = 'YOUR_FACEBOOK_LOGIN'
+FACEBOOK_PASSWORD = 'YOUR_FACEBOOK_PASSWORD'
